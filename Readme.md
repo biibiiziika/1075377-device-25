@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Кристина Ковальчук](https://up.htmlacademy.ru/htmlcss/25/user/1075377).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
