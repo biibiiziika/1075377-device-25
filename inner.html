@@ -12,7 +12,7 @@
       <div class="container-menu">
         <form></form>
         <ul class="user-menu">
-          <li><a href="#">Ввлентин Петухов</a></li>
+          <li><a href="#">Валентин Петухов</a></li>
           <li><a href="#">Выйти</a></li>
           <li><a href="#">Сравнить</a></li>
           <li><a href="#">Корзина</a></li>
@@ -37,9 +37,53 @@
          <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>  
        </ul>
        <section class="filters">
-         <form></form>
-         <button class="button-show" type="submit">Показать</button>
-       </section>
+             <h2>Фильтр:</h2>
+             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+             <fieldset>
+               <legend>Стоимость</legend>
+               <input class="price" type="range" min="0" max="10" step="1" value="50">
+               <span>Цвет</span>
+               <ul class="colors-choice">
+                 <li class="filter-color">
+                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" checked>
+                   <img class="color" src="img/checkbox-on.svg" alt="черный" width="27" height="23"> Черный   
+                 </li>
+                 <li class="filter-color">
+                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white">
+                   <img class="color" src="img/checkbox-off.svg" alt="белый" width="23" height="23">Белый  
+                 </li>
+                 <li class="filter-color">
+                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" checked>
+                   <img class="color" src="img/checkbox-on.svg" alt="синий" width="27" height="23">Синий  
+                 </li>
+                 <li class="filter-color">
+                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" checked>
+                   <img class="color" src="img/checkbox-on.svg" alt="красный" width="27" height="23">Красный  
+                 </li>
+                 <li class="filter-color">
+                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink">
+                   <img class="color" src="img/checkbox-off.svg" alt="розовый" width="23" height="23">Розовый 
+                 </li>
+               </ul>   
+             </fieldset>
+             <fieldset>
+              <legend>Bluetooth</legend>
+              <ul class="bluetooth">
+                <li class="bluetooth-choice">
+                  <label for="bluetooth-choice-yes"></label>
+                  <img class="radio" src="img/radio-off.svg" alt="есть" width="25" height="25">
+                  <input type="radio" id="bluetooth-choice-yes" name="bluetooth" value="yes">Есть   
+                </li>
+                <li class="bluetooth-choice">
+                  <label for="bluetooth-choice-no"></label>
+                  <img class="radio" src="img/radio-off.svg" alt="нет" width="25" height="25">
+                  <input type="radio" id="bluetooth-choice-no" name="bluetooth" value="no">Нет
+                </li>
+              </ul>              
+            </fieldset>
+            <button class="button-show" type="submit">Показать</button>
+          </form>
+         </section>
        <h2 class="visually-hidden">Список селфи</h2>
        <ul class="catalog-list">
          <li class="catalog-item">
