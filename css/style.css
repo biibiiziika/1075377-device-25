@@ -13,23 +13,23 @@
 body {
   margin: 0;
   padding: 0;
-  width: 1440px;
   font-family: "Gilroy", Arial, sans-serif;
   background-color: #ffffff;
-}
-a {
-  text-decoration: none;
 }
 img {
   max-width: 100%;
   height: auto;
 }
 .main-header {
-  width: 1040px;
-  height: 209px;
   color: #000000;
   background-color: rgba(240, 197, 46, 0.5);
 } 
+.logo-header:hover {
+   opacity: 0.6;
+}
+.logo-header:active {
+   opacity: 0.3;
+}
 .container-menu {
    font-family: "OpenSans", Arial, sans-serif;  
    font-size: 15px;
@@ -53,6 +53,28 @@ img {
    text-transform: uppercase;
    color: #000000;
    list-style: none;
+}
+.user-menu li {
+   list-style-type: none;
+}
+.user-menu a {
+  text-decoration:none;
+  color: #000000;
+}
+.site-navigation li {
+   list-style-type: none;
+}
+.site-navigation a {
+  text-decoration:none;
+  color: #000000;
+}
+.user-menu a:hover,
+.site-navigation a:hover {
+   opacity: 0.6;
+}
+.user-menu a:active,
+.site-navigation a:active {
+   opacity: 0.3;
 }
 .about-us h2,
 .contacts h2 {
@@ -88,6 +110,40 @@ img {
     color: #000000;
     list-style: none;
 }
+.button-first,
+.button-second,
+.button-show {
+    font-family: "Gilroy", Arial, sans-serif;
+    position: absolute; 
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    text-align: center;
+    letter-spacing: 3.6px;
+    color: #000000;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: 0;
+    z-index: 1;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+}
+.main-footer {
+    margin: auto;
+    background-color: #464646;
+}
+.logo-device-footer path {
+  fill: #ffc600;
+}
+.logo-device-footer:hover {
+    opacity: 0.6;
+}
+.logo-device-footer:active {
+    opacity: 0.3;
+}
 .footer-container-first {
     font-family: "OpenSans", Arial, sans-serif;
     font-size: 15px;
@@ -98,6 +154,19 @@ img {
     letter-spacing: 0.2px;
     text-align: left;
     list-style: none;
+}
+.user-navigation-footer li {
+   list-style-type: none;
+}
+.user-navigation-footer a {
+    text-decoration:none;
+    color: rgba(255, 255, 255, 0.7);
+}
+.user-navigation-footer a:hover {
+    color: #ffffff;
+}
+.user-navigation-footer a:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 .footer-container-second {
     font-family: "Gilroy", Arial, sans-serif;
@@ -112,6 +181,35 @@ img {
     list-style: none;
     color: #ffffff;
     text-transform: uppercase;
+}
+.footer-navigation li {
+   list-style-type: none;
+}
+.footer-navigation a {
+  text-decoration:none;
+  color: #ffffff;
+}
+.footer-navigation a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-navigation a:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+.social-button li {
+   list-style-type: none;
+   opacity: 0.3;
+}
+.social-button li:hover {
+    opacity: 0.6;
+}
+.social-button li:active {
+    opacity: 0.1;
+}
+.logo-html:hover {
+  opacity: 0.6;
+}
+.logo-html:active {
+  opacity: 0.3;
 }
 .page-title {
     font-family: "Gilroy", Arial, sans-serif;
@@ -134,7 +232,33 @@ img {
     letter-spacing: 0.1px;
     text-align: left;
     color: rgba(0, 0, 0, 0.3);
-}  
+} 
+.breadcrumbs li {
+    list-style-type: none;
+} 
+.breadcrumbs a {
+    color: rgba(0, 0, 0, 0.3);
+}
+.breadcrumbs a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.breadcrumbs a:active {
+    color: rgba(0, 0, 0, 0.1);
+}
+.breadcrumbs-current{
+   color: color: rgba(0, 0, 0, 0.3);
+}
+.breadcrumbs-current li:hover {
+   color: color: rgba(0, 0, 0, 0.3);
+}
+.breadcrumbs-current li:active {
+   color: color: rgba(0, 0, 0, 0.3);
+}
+.filter-color,
+.bluetooth-choice {
+    cursor: pointer;
+    user-select: none;
+}
 .filters h2 {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
@@ -159,6 +283,9 @@ img {
     text-align: left;
     color: #000000;
 }
+.filter fieldset {
+    border: none;
+}    
 .colors-choice {
     font-family: "OpenSans", Arial, sans-serif;
     font-size: 14px;
@@ -183,6 +310,10 @@ img {
     color: #000000;
     list-style: none;
  }
+ .catalog-list li {
+   list-style-type: none;
+}
+
  .catalog-item a{
     display: flex;
     font-family: "Gilroy", Arial, sans-serif;
